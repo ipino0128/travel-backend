@@ -34,6 +34,8 @@ ActiveRecord::Schema.define(version: 2018_11_30_164158) do
   create_table "users", force: :cascade do |t|
     t.string "username"
     t.string "password_digest"
+    t.string "avatar", default: "https://qph.fs.quoracdn.net/main-qimg-87001d2ce810c2f48c97032cbc905939"
+    t.string "bio", default: "I am a travel blog user!"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

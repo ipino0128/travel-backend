@@ -7,7 +7,7 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 
-User.create(username: "isabelle", password: "password")
+User.create(username: "isabelle", password: "password", password_confirmation: "password")
 
 
 Destination.create(name: "New York City, New York")

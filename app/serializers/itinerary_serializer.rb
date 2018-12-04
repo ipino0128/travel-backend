@@ -1,3 +1,3 @@
 class ItinerarySerializer < ActiveModel::Serializer
-  attributes :id, :description, :user, :destination
+  attributes :id, :title, :description, :img_url, :user_id, :destination_id
 end

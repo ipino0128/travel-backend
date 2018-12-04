@@ -3,4 +3,6 @@ Rails.application.routes.draw do
   resources :users, only: [:index, :create, :show]
   resources :destinations, only: [:index, :create, :show]
   resources :itineraries, only: [:index, :create, :show]
+  post '/login', to: 'auth#create'
+  get '/profile', to: 'users#profile'
 end
